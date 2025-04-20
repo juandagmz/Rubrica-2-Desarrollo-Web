@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .filter {
+    margin-bottom: 1rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  .card img {
+    max-width: 100px;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  
